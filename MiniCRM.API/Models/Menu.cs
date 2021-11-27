@@ -4,5 +4,6 @@ namespace MiniCRM.API.Models
     {
         public int id { get; set; }
         public string name { get; set; }
+        public float price { get; set; }
     }
 }
