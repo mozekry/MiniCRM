@@ -34,7 +34,9 @@ namespace MiniCRM.API.Controllers
          
             var userToCreate = new User
             {
-                username = userForRegisterDTO.username
+                username = userForRegisterDTO.username,
+                Created = userForRegisterDTO.Created
+
             };
            
              var CreatedUser = await _repo.Register(userToCreate, userForRegisterDTO.password);
